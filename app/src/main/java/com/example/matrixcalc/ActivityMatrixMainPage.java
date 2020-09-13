@@ -27,35 +27,7 @@ public class ActivityMatrixMainPage extends AppCompatActivity {
         bt_multiplication = (Button)findViewById(R.id.btmultiplication);
 
 
-        bt_determine.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent abc = new Intent(ActivityMatrixMainPage.this,DeterminePage.class);
-                startActivity(abc);
 
-            }
-        });
-        bt_inverse.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent abc = new Intent(ActivityMatrixMainPage.this,InversePage.class);
-                startActivity(abc);
-            }
-        });
-        bt_trancepose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent abc = new Intent(ActivityMatrixMainPage.this,TransposePage.class);
-                startActivity(abc);
-            }
-        });
-        bt_adjoint.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent abc = new Intent(ActivityMatrixMainPage.this,AdjointPage.class);
-                startActivity(abc);
-            }
-        });
         bt_sum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,7 +41,7 @@ public class ActivityMatrixMainPage extends AppCompatActivity {
                 Intent abc = new Intent(ActivityMatrixMainPage.this,MultiplicationPage.class);
                 startActivity(abc);
             }
-        });
+        })
 
 
 
