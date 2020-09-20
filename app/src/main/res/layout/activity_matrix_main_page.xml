@@ -32,10 +32,10 @@
         android:id="@+id/btadjoint"
         android:layout_width="134dp"
         android:layout_height="55dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="228dp"
         android:text="ADJOINT"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
