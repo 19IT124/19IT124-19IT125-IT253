@@ -19,33 +19,34 @@ public class ActivityMatrixMainPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_matrix_main_page);
 
-        bt_determine = (Button)findViewById(R.id.btdetermine);
-        bt_trancepose = (Button)findViewById(R.id.bttranspose);
-        bt_inverse = (Button)findViewById(R.id.btinverse);
-        bt_adjoint = (Button)findViewById(R.id.btadjoint);
-        bt_sum = (Button)findViewById(R.id.btsum);
-        bt_multiplication = (Button)findViewById(R.id.btmultiplication);
-
+        bt_determine = (Button) findViewById(R.id.btdetermine);
+        bt_trancepose = (Button) findViewById(R.id.bttranspose);
+        bt_inverse = (Button) findViewById(R.id.btinverse);
+        bt_adjoint = (Button) findViewById(R.id.btadjoint);
+        bt_sum = (Button) findViewById(R.id.btsum);
+        bt_multiplication = (Button) findViewById(R.id.btmultiplication);
 
 
         bt_sum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent abc = new Intent(ActivityMatrixMainPage.this,SumPage.class);
+                Intent abc = new Intent(ActivityMatrixMainPage.this, SumPage.class);
                 startActivity(abc);
             }
         });
         bt_multiplication.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent abc = new Intent(ActivityMatrixMainPage.this,MultiplicationPage.class);
+                Intent abc = new Intent(ActivityMatrixMainPage.this, MultiplicationPage.class);
                 startActivity(abc);
             }
-        })
-
-
-
-
-
+        });
+        bt_adjoint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent abc = new Intent(ActivityMatrixMainPage.this, AdjointPage.class);
+                startActivity(abc);
+            }
+        });
     }
 }
